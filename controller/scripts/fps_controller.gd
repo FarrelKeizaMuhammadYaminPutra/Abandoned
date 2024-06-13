@@ -51,7 +51,6 @@ func _ready():
 	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
-	CROUCH_SHAPECAST.add_exception($".")
 
 func _physics_process(delta):
 	
@@ -76,3 +75,6 @@ func update_input(speed: float, acceleration: float, deceleration: float) -> voi
 	
 func update_velocity() -> void:
 	move_and_slide()
+
+func take_damage():
+	print("damaged")

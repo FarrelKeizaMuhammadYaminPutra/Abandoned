@@ -19,12 +19,12 @@ data = PackedVector3Array(-1, 5, 1, 1, 5, 1, -1, -5, 1, 1, 5, 1, 1, -5, 1, -1, -
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_1dg4h"]
 
-[sub_resource type="Sky" id="Sky_j6psu"]
+[sub_resource type="Sky" id="Sky_ci2bt"]
 sky_material = SubResource("PhysicalSkyMaterial_1dg4h")
 
 [sub_resource type="Environment" id="Environment_fco0w"]
 background_mode = 2
-sky = SubResource("Sky_j6psu")
+sky = SubResource("Sky_ci2bt")
 ambient_light_color = Color(1, 1, 1, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_fpxe1"]
