@@ -1,0 +1,141 @@
+[gd_scene load_steps=14 format=3 uid="uid://bylkddtd24jap"]
+
+[ext_resource type="Script" path="res://scripts/mainmenu.gd" id="1_qixqa"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="2_71e6w"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wnt7p"]
+size = Vector3(40, 0, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4kbu"]
+albedo_color = Color(0.647059, 0.466667, 0.0666667, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0eul3"]
+data = PackedVector3Array(-20, 0, 20, 20, 0, 20, -20, 0, 20, 20, 0, 20, 20, 0, 20, -20, 0, 20, 20, 0, -20, -20, 0, -20, 20, 0, -20, -20, 0, -20, -20, 0, -20, 20, 0, -20, 20, 0, 20, 20, 0, -20, 20, 0, 20, 20, 0, -20, 20, 0, -20, 20, 0, 20, -20, 0, -20, -20, 0, 20, -20, 0, -20, -20, 0, 20, -20, 0, 20, -20, 0, -20, 20, 0, 20, -20, 0, 20, 20, 0, -20, -20, 0, 20, -20, 0, -20, 20, 0, -20, -20, 0, 20, 20, 0, 20, -20, 0, -20, 20, 0, 20, 20, 0, -20, -20, 0, -20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bc4xc"]
+size = Vector3(2, 10, 2)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_yko7e"]
+data = PackedVector3Array(-1, 5, 1, 1, 5, 1, -1, -5, 1, 1, 5, 1, 1, -5, 1, -1, -5, 1, 1, 5, -1, -1, 5, -1, 1, -5, -1, -1, 5, -1, -1, -5, -1, 1, -5, -1, 1, 5, 1, 1, 5, -1, 1, -5, 1, 1, 5, -1, 1, -5, -1, 1, -5, 1, -1, 5, -1, -1, 5, 1, -1, -5, -1, -1, 5, 1, -1, -5, 1, -1, -5, -1, 1, 5, 1, -1, 5, 1, 1, 5, -1, -1, 5, 1, -1, 5, -1, 1, 5, -1, -1, -5, 1, 1, -5, 1, -1, -5, -1, 1, -5, 1, 1, -5, -1, -1, -5, -1)
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_1dg4h"]
+
+[sub_resource type="Sky" id="Sky_j6psu"]
+sky_material = SubResource("PhysicalSkyMaterial_1dg4h")
+
+[sub_resource type="Environment" id="Environment_fco0w"]
+background_mode = 2
+sky = SubResource("Sky_j6psu")
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fpxe1"]
+size = Vector3(6, 0.5, 4)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_3a7gj"]
+data = PackedVector3Array(-3, 0.25, 2, 3, 0.25, 2, -3, -0.25, 2, 3, 0.25, 2, 3, -0.25, 2, -3, -0.25, 2, 3, 0.25, -2, -3, 0.25, -2, 3, -0.25, -2, -3, 0.25, -2, -3, -0.25, -2, 3, -0.25, -2, 3, 0.25, 2, 3, 0.25, -2, 3, -0.25, 2, 3, 0.25, -2, 3, -0.25, -2, 3, -0.25, 2, -3, 0.25, -2, -3, 0.25, 2, -3, -0.25, -2, -3, 0.25, 2, -3, -0.25, 2, -3, -0.25, -2, 3, 0.25, 2, -3, 0.25, 2, 3, 0.25, -2, -3, 0.25, 2, -3, 0.25, -2, 3, 0.25, -2, -3, -0.25, 2, 3, -0.25, 2, -3, -0.25, -2, 3, -0.25, 2, 3, -0.25, -2, -3, -0.25, -2)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5lgyn"]
+data = PackedVector3Array(-3, 0.25, 2, 3, 0.25, 2, -3, -0.25, 2, 3, 0.25, 2, 3, -0.25, 2, -3, -0.25, 2, 3, 0.25, -2, -3, 0.25, -2, 3, -0.25, -2, -3, 0.25, -2, -3, -0.25, -2, 3, -0.25, -2, 3, 0.25, 2, 3, 0.25, -2, 3, -0.25, 2, 3, 0.25, -2, 3, -0.25, -2, 3, -0.25, 2, -3, 0.25, -2, -3, 0.25, 2, -3, -0.25, -2, -3, 0.25, 2, -3, -0.25, 2, -3, -0.25, -2, 3, 0.25, 2, -3, 0.25, 2, 3, 0.25, -2, -3, 0.25, 2, -3, 0.25, -2, 3, 0.25, -2, -3, -0.25, 2, 3, -0.25, 2, -3, -0.25, -2, 3, -0.25, 2, 3, -0.25, -2, -3, -0.25, -2)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_qixqa")
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_wnt7p")
+surface_material_override/0 = SubResource("StandardMaterial3D_i4kbu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_0eul3")
+
+[node name="Box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57504, 4.60962, 8.4185)
+mesh = SubResource("BoxMesh_bc4xc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_yko7e")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.950779, -0.212061, 0.225942, -0.278685, -0.266391, 0.922698, -0.135479, -0.940248, -0.312377, 5.01934, 3.95575, 0.895588)
+light_energy = 3.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fco0w")
+
+[node name="HighPlatform" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, -6)
+mesh = SubResource("BoxMesh_fpxe1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HighPlatform"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HighPlatform/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_3a7gj")
+
+[node name="LowPlatform" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -6)
+mesh = SubResource("BoxMesh_fpxe1")
+skeleton = NodePath("../HighPlatform")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LowPlatform"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowPlatform/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_5lgyn")
+
+[node name="camera_pivot" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="camera_pivot"]
+transform = Transform3D(1, 0, 0, 0, 0.920505, 0.390731, 0, -0.390731, 0.920505, 0, 5.2, 8.56)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_71e6w")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = -70.5
+offset_right = 173.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Start
+"
+
+[node name="Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "butt 1
+"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "butt 2
+"
+
+[node name="QuitButton" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="Control/VBoxContainer/StartButton" to="Control" method="_on_start_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/QuitButton" to="Control" method="_on_quit_button_pressed"]
