@@ -128,14 +128,14 @@ layout_mode = 2
 text = "butt 1
 "
 
-[node name="Button2" type="Button" parent="Control/VBoxContainer"]
+[node name="Test Gameover" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
-text = "butt 2
-"
+text = "test game over"
 
 [node name="QuitButton" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
 
 [connection signal="pressed" from="Control/VBoxContainer/StartButton" to="Control" method="_on_start_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Test Gameover" to="Control" method="_on_test_gameover_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/QuitButton" to="Control" method="_on_quit_button_pressed"]
